@@ -4,13 +4,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p {
-    font-size: 1.5em;
-    color: rgb(228, 233, 224);
-    text-align: center;
-    bottom: 20px
-}
-
 /*premiere partie du code */
 
 .header-container {
@@ -144,6 +137,13 @@ a:hover {
     width: 15%;
   }
 
+  ul {
+    text-align: center;
+    color: rgb(124, 8, 8);
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
 /* troisieme partie du code */
 
 .footer-container {
@@ -160,55 +160,69 @@ a:hover {
 }
 
 .footer-container p {
-    color: rgb(50, 83, 26);
+    color: rgb(0, 0, 0);
     font-size: 2em;
     vertical-align: top;
 }
 
 .contact {
-    background-color: #000000;
     width: 30%;
     border-radius: 10%;
 }
 
 .contactP{
-    background-color: red;
-    width: 100%;
-    height: 50%;
+    height: 30%;
 }
 
 .contactIcone {
-    background-color: aqua;
-    width: 100%;
-    height: 50%;
+    display: flex; 
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #phone {
-    display: inline-block; 
-    background-color:rgb(50, 83, 26); 
-    color:#000000; 
-    padding:10px 20px; 
-    text-decoration:none; 
-    border-radius:5px;
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(0, 0, 0); 
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
     height: 40px;
+    width: 60%;
+    padding: 1.5% 0;
 }
 
 #mail {
-    display: inline-block; 
-    background-color:rgb(50, 83, 26); 
-    color:#000000; 
-    padding:10px 20px;
-    padding-top: 5px; 
-    text-decoration:none; 
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(0, 0, 0); 
+    color: whitesmoke;
+    text-decoration: none;  
     border-radius:5px;
-    height: 30px;
+    height: 40px;
+    width: 60%;
+    padding: 1.5% 0;
 }
 
 .reseaux {
-    display: flex;
-    background-color: #000000;
-    justify-content: space-between;
     width: 30%;
     border-radius: 10%;
 }
 
+.reseauxP{
+    height: 30%;
+}
+
+.reseauxIcone {
+    display: flex; 
+    height: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn2 {
+    background-color: #131111;
+}
