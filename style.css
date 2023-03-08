@@ -312,13 +312,19 @@ a:hover {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .card {
     display: flex;
-    grid-template-rows: max-content 200px 1fr;
-    background-color: rgb(24, 80, 17);
-    width: 20%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #5f5c61, #201b1b, #1c4722);
+    width: 60%;
     border: 5px solid black;
 }
 
@@ -326,11 +332,51 @@ a:hover {
     object-fit: cover;
     width: 100%;
     height: 40%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .card header {
     width: 100%;
-    height: 20%;
+    height: 15%;
+}
+
+.card footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+}
+
+#present {
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(20, 20, 20); 
+    color:rgb(250, 5, 5);
+    text-decoration: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 30%;
+    padding: 1.5% 0;
+    align-items: center;
+}
+
+#present:hover {
+    color: #1c4722;
+}
+
+#check {
+    background-color: #000000;
+    color: #1c4722;
+    display: flex; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card content {
+    width: 100%;
+    height: 30%;
 }
 
 .centersEvenements p {
