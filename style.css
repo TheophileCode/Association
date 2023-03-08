@@ -24,6 +24,7 @@ body{
 
 .tittle {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 60%;
     height: 100%;
@@ -306,6 +307,16 @@ a:hover {
     display: flex;
 }
 
+.centerEvenements h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 3em;
+    font-style: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #5f5c61, #201b1b, #1c4722);
+    border-radius: 40px;
+}
+
 .cards {
     display: flex;
     justify-content: center;
@@ -386,3 +397,4 @@ a:hover {
     text-align: center;
     top: 8px;
 }
+
