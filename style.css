@@ -219,7 +219,7 @@ body{
   color: whitesmoke;
   text-decoration: none;
   border-radius: 5px;
-  height: auto;
+  max-height: 50px;
   width: 60%;
   padding: 1.5% 0;
   font-size: 2vw;
@@ -233,7 +233,7 @@ body{
   color: whitesmoke;
   text-decoration: none;  
   border-radius:5px;
-  height: auto;
+  max-height: 50px;
   width: 70%;
   padding: 1.5% 0;
   font-size: 2vw;
