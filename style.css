@@ -2,11 +2,12 @@ body{
     background-color: black;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*premiere partie du code */
-
-.header-container {
+    font-size: 16px;
+  }
+  
+  /*premiere partie du code */
+  
+  .header-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -15,77 +16,69 @@ body{
     padding-bottom: 10px;
     height: 200px;
     top: 10%;
-}
-
-.imageLeft {
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .tittle {
     display: flex;
-    width: 30%;
-}
-
-.tittle {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imageLeft {
+    display: flex;
+    max-width: 30%;
+    justify-content: start; /**/
+  }
+  
+  .imageRight {
+    display: flex;
+    max-width: 30%;
+    justify-content: end; /**/
+  }
+  
+  .tittleBig {
+    justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
-}
-
-.tittle h1 {
     font-family: Impact, fantasy;
-    font-size: 4rem; 
     color: rgb(174, 185, 166);
-    text-align: center;
-    z-index: 2;
-    height: 80%;
-}
-
-#subtittle {
-    font-size: 1.5em;
-    color: rgb(50, 83, 26);
-    text-align: center;
-    position: relative;
-    top: 8px;
-}
-
-.tittleBig {
-    display: inline-block;
-    color: rgb(174, 185, 166);
-    font-size: 4rem;
-    font-family: Impact, fantasy;
-    text-align: center;
-    z-index: 2;
+    font-size: 4.5vw;
     height: 70%;
-}
-
-.imageRight {
+    max-width: 100%;
+  }
+  
+  #subtittle {
+    justify-content: center;
     display: flex;
-    width: 30%;
-}
-
-#imageTop {
-    border-radius: 20px;
-    height: 100%;
-    max-width: 30%;
-    position: absolute;
-    top: 10%;
-    z-index: 1;
-    left: 0;
-}
-
-#imageTop2 {
-    border-radius: 20px;
-    height: 100%;
-    max-width: 30%;
-    position: absolute;
-    top: 10%;
-    z-index: 1;
-    right: 0;
-}
-
-a:hover {
+    font-size: 1.5vw;
     color: rgb(50, 83, 26);
-}
-
+    width: 100%;
+    height: 30%;
+    align-items: center;
+  }
+  
+  #imageTop {
+    display: flex;
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  #imageTop2 {
+    display: flex;
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  a:hover {
+      color: rgb(50, 83, 26);
+  }
+  
 /* deuxieme partie du code*/
 
 .main-container {
@@ -96,16 +89,16 @@ a:hover {
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 100px;
-  }
+}
   
-  .center {
+.center {
     background-color: rgb(174, 185, 166);
-    width: 70%;
+    width: 100%;
     border-radius: 20px;
     flex-direction: column;
     align-items: center;
     display: flex;
-  }
+}
   
   h1 {
     color: black;
@@ -115,7 +108,8 @@ a:hover {
   
   h2{
     color: black;
-    font-size: 2em; 
+    font-size: 4vw; 
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -188,73 +182,80 @@ a:hover {
     justify-content: space-around;
 }
 
-.footer-container p {
-    color: rgb(0, 0, 0);
-    font-size: 2em;
-    vertical-align: top;
-    text-align: center;
+.reseauxP, .contactP {
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .contact {
-    border: 4px solid black;
-    width: 30%;
-    border-radius: 5%;
-    box-shadow: 10px 10px 5px black;
-}
-
-.contactP{
-    height: 30%;
+  justify-content: column;
+  align-items: center;
+  text-align: center;
+  border: 4px solid black;
+  width: 30%;
+  border-radius: 5%;
+  box-shadow: 10px 10px 5px black;
 }
 
 .contactIcone {
-    display: flex; 
-    height: 70%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex; 
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #phone {
-    display: flex; 
-    justify-content: center;
-    background-color: rgb(0, 0, 0); 
-    color: whitesmoke;
-    text-decoration: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 60%;
-    padding: 1.5% 0;
+  display: flex; 
+  justify-content: center;
+  background-color: rgb(0, 0, 0); 
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 5px;
+  height: auto;
+  width: 60%;
+  padding: 1.5% 0;
+  font-size: 2vw;
+  align-items: center;
 }
 
 #mail {
-    display: flex; 
-    justify-content: center;
-    background-color: rgb(0, 0, 0); 
-    color: whitesmoke;
-    text-decoration: none;  
-    border-radius:5px;
-    height: 40px;
-    width: 60%;
-    padding: 1.5% 0;
+  display: flex; 
+  justify-content: center;
+  background-color: rgb(0, 0, 0); 
+  color: whitesmoke;
+  text-decoration: none;  
+  border-radius:5px;
+  height: auto;
+  width: 70%;
+  padding: 1.5% 0;
+  font-size: 2vw;
+  align-items: center;
 }
 
 .reseaux {
-    width: 30%;
-    border-radius: 10%;
-    border: 4px solid black;
-    box-shadow: 10px 10px 5px black;
-}
-
-.reseauxP{
-    height: 30%;
+  width: 30%;
+  border-radius: 10%;
+  border: 4px solid black;
+  box-shadow: 10px 10px 5px black;
+  justify-content: column;
+  align-items: center;
+  text-align: center;
 }
 
 .reseauxIcone {
-    display: flex; 
-    height: 70%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex; 
+  height: 70%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #youtube{
@@ -300,7 +301,7 @@ a:hover {
 
 .centerEvenements {
     background-image: url('image/camouflage-1.webp');
-    width: 70%;
+    width: 100%;
     border-radius: 20px;
     flex-direction: column;
     align-items: center;
@@ -310,7 +311,7 @@ a:hover {
 .centerEvenements h3 {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 3em;
+    font-size: 5vw;
     font-style: bold;
     color: #ffffff;
     background: linear-gradient(135deg, #5f5c61, #201b1b, #1c4722);
@@ -368,7 +369,7 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     height: 40px;
-    width: 30%;
+    width: 50%;
     padding: 1.5% 0;
     align-items: center;
 }
@@ -391,10 +392,44 @@ a:hover {
 }
 
 .centersEvenements p {
-    font-size: 1.5em;
+    font-size: 3vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 0, 0);
     text-align: center;
     top: 8px;
 }
 
+@media screen and (max-width: 400px) {
+    .imageRight, .imageLeft {
+      display: none;
+    }
+
+    .tittleBig {
+        font-size: 7vw;
+    }
+
+    #subtittle {
+        font-size: 4vw;
+    }
+
+    .right, .left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .reseauxIcone {
+        flex-direction: column;
+    }
+  
+      #youtube, #insta, #facebook {
+        max-width: 60px;
+        max-height: 40px;
+    }
+
+    .contactP, .reseauxP {
+        background-color: rgb(174, 185, 166);
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+}
